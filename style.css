@@ -11,99 +11,102 @@ body{
     display: flex;
     flex-flow: column nowrap;
 }
-.header {
-    background: #000;
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-    .menu{
-        background: #2D4059;
-        display: flex;
-        flex-flow: row nowrap;
-        height: 100px;
-        align-items: center;
+    .header {
+        background: url(../images/discover.be9b60f7.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        flex-flow: column nowrap;
+        background-repeat: no-repeat;
     }
-        .logo{
-            background: #EA5455;
-            flex: 1 1 auto;
-            height: 50px;
-        }
 
-        .nav{
-            background: #EA5455;
-            flex: 5 1 auto;
-            height: 50px;
+        .menu{
+            background: #2D4059;
+            display: flex;
+            flex-flow: row nowrap;
+            height: 100px;
+            align-items: center;
         }
-        .social{
-            background: #EA5455;
-            flex: 1 1 auto;
-            height: 50px;
-        }
-    .texto-principal{
-        background: #F07B3F;
-    }    
-        h1{
-            background: #FFD460;
-        }
+            .logo{
+                background: #EA5455;
+                flex: 1 1 auto;
+                height: 50px;
+            }
 
-.section{
-    background: #000;
-    display: flex;
-}
-    .articulos{
-        background: #4e4e6a;
-        flex: 2 1 auto;
-        display: flex;
-        flex-flow: row wrap;
-    }
-        .article{
-            background: #1f6cb0;
-            flex: 1 1 40%; 
-        }
+            .nav{
+                background: #EA5455;
+                flex: 5 1 auto;
+                height: 50px;
+            }
+            .social{
+                background: #EA5455;
+                flex: 1 1 auto;
+                height: 50px;
+            }
+        .texto-principal{
+            background: #F07B3F;
+        }    
+            h1{
+                background: #FFD460;
+            }
 
-        .navegacion{
-            background: #70a3c4;
-            flex: 1 1 100%;
-        }
-    .aside{
-        background: #7f3f52;
-        flex: 1 1 auto;
-    }    
-        .publicidad{
-            background: #ffeab5;
-        }
-.footer{
-    background: #000;
-    display: flex;
-    justify-content: center;
-}
-    .pie{
-        background: #e6af2e;
-        width: 300px;
-    }
-@media all and (max-width: 800px){
     .section{
-        flex-direction: column;
+        background: #000;
+        display: flex;
     }
-    .menu{
-        flex-direction: column;
-        height: auto;
-    }
-    .aside{
+        .articulos{
+            background: #4e4e6a;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .article{
+                background: #1f6cb0;
+                flex: 1 1 40%; 
+            }
+
+            .navegacion{
+                background: #70a3c4;
+                flex: 1 1 100%;
+            }
+        .aside{
+            background: #7f3f52;
+            flex: 1 1 auto;
+        }    
+            .publicidad{
+                background: #ffeab5;
+            }
+    .footer{
+        background: #000;
         display: flex;
         justify-content: center;
     }
-}
-
-@media all and (max-width: 400px){
-    .aside{
-        flex-direction: column;
+        .pie{
+            background: #e6af2e;
+            width: 300px;
+        }
+    @media all and (max-width: 800px){
+        .section{
+            flex-direction: column;
+        }
+        .menu{
+            flex-direction: column;
+            height: auto;
+        }
+        .aside{
+            display: flex;
+            justify-content: center;
+        }
     }
-}
 
-@media all and (max-width: 600px){
-    .article{
-        flex-direction: column;
+    @media all and (max-width: 400px){
+        .aside{
+            flex-direction: column;
+        }
     }
-}
+
+    @media all and (max-width: 600px){
+        .article{
+            flex-direction: column;
+        }
+    }
